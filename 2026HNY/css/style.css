@@ -2253,7 +2253,7 @@ section:nth-last-child {
   }
 
   .dots {
-    margin-top: 15px;
+    margin-top: 20px;
   } 
 }
 
@@ -2774,6 +2774,12 @@ section:nth-last-child {
   .cons .form-card{
     margin: 60px auto 0;
     transform: translateX(11%) translateY(0);
+  }
+
+  .cons .submit-btn {
+    width: 220px;
+    height: 45px;
+    font-size: 20px;
   }
 }
 
