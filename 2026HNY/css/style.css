@@ -1093,18 +1093,15 @@ section:nth-last-child {
 
 .notice {
  	width: fit-content;
-  	max-width: 100%;
-  	border: 1px solid  var(--lightblue);
+  max-width: 100%;
+  border: 1px solid  var(--lightblue);
 	border-radius: 60px;
-
-  	padding: 20px 30px;
-
-  	color: var(--lightblue);
-  	font-size: 16px;
-  	line-height: 1.5;
+  padding: 20px 30px;
+  color: var(--lightblue);
+  font-size: 16px;
+  line-height: 1.5;
 	letter-spacing: 0.1rem;
-
-  	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .notice-title {
@@ -1113,6 +1110,11 @@ section:nth-last-child {
   /* text-indent: 20px; */
 }
 
+.notice i {
+  padding: 0 5px;
+}
+
+/* 裝飾 */
 .bg-3 img {
     z-index: 12;
     width: 100vw;
