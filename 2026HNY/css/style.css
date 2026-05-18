@@ -681,7 +681,7 @@ section:nth-last-child {
     }
 
 	.button-honey {
-  		width: 150px;
+  	width: 150px;
 		height: 50px;
 	}
 }
@@ -1411,7 +1411,11 @@ section:nth-last-child {
 	.button-honey-top {
 		position: relative;
         top: -70px;
-    }
+  }
+
+  .button-honey {
+    max-width: 130px;
+  }
 
   .info-item .gwp-1,
 	.info-item .gwp-2 ,
