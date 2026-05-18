@@ -1110,7 +1110,7 @@ section:nth-last-child {
 .notice-title {
   font-weight:bold;
   margin-bottom:8px;
-  text-indent: 20px;
+  /* text-indent: 20px; */
 }
 
 .bg-3 img {
@@ -1627,13 +1627,13 @@ section:nth-last-child {
 }
 
 /* 容器 */
-.honeymoon-section .honeymoon-box{
+.honeymoon-section .honeymoon-box {
   max-width: 1280px;
   margin: auto;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 38px 28px;
+  gap: 45px 28px;
 
   padding: 40px 0;
 }
@@ -1643,7 +1643,7 @@ section:nth-last-child {
   background: #fff;
   border-radius: 22px;
 
-  overflow: visible; /* ✅ 改這裡：不要 hidden */
+  overflow: visible; /* 不要 hidden */
 
   box-shadow: 0 10px 25px rgba(84, 154, 193, 0.18);
 
@@ -2220,7 +2220,7 @@ section:nth-last-child {
 	}
 
 	.honeymoon-section .honeymoon-box {
-      gap: 50px;
+    gap: 50px;
   }
 
 	.bottom-btn-wrap {
