@@ -1410,12 +1410,8 @@ section:nth-last-child {
 @media (max-width: 575.98px) {
 	.button-honey-top {
 		position: relative;
-    top: -70px;
-  }
-
-  .button-honey {
-  	width: 160px;
-	}
+        top: -70px;
+    }
 
   .info-item .gwp-1,
 	.info-item .gwp-2 ,
