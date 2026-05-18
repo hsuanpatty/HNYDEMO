@@ -1893,6 +1893,13 @@ section:nth-last-child {
   }
 }
 
+@media (max-width: 575.98px){
+  .tour-content h3{
+    font-size: 22px;
+  }
+
+}
+
 /* =========================
    推薦名論（完整修正版）
 ========================= */
