@@ -2042,9 +2042,12 @@ section:nth-last-child {
 
   padding: 35px 28px;
   box-sizing: border-box;
-
-  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  opacity: 1;
 }
 
 /* ===== 前面 ===== */
@@ -2165,62 +2168,63 @@ section:nth-last-child {
   background: var(--lightblue);
   transform: translateY(-2px);
 }
+
 /* dots */
 .dots {
-    width: 65px;
-    height: 22px;
-    border-radius: 30px;
-    background: var(--dots);
-    margin-left: auto;
+  width: 65px;
+  height: 22px;
+  border-radius: 30px;
+  background: var(--dots);
+  margin-left: auto;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 
-    margin-top: 20px;
+  margin-top: 10px;
 }
 
 .dots span {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--white);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--white);
 }
 
 /* arrow */
 .slider-next {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    border: none;
-    background: #ffe66d;
-    cursor: pointer;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background: #ffe66d;
+  cursor: pointer;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
 }
 
 .slider-next:hover {
-    transform: translateY(-50%) scale(1.08);
+  transform: translateY(-50%) scale(1.08);
 }
 
 .slider-next::before {
-    content: "";
-    display: block;
-    width: 28px;
-    height: 28px;
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
 
-    background: url("../images/arrow-1.png") center/contain no-repeat;
+  background: url("../images/arrow-1.png") center/contain no-repeat;
 }
 
 /* =======================
@@ -2384,6 +2388,10 @@ section:nth-last-child {
   .review-card {
     height: 420px;
 	}
+
+  .review-title {
+    font-size: 22px;
+  }
 }
 
 /* 專屬蜜月諮詢 */
