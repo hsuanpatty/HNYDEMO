@@ -1587,6 +1587,10 @@ section:nth-last-child {
   .scroll-position {
     margin-top: -160px;
   }
+
+  .pet-title {
+    margin: 30px 0 0;
+  }
 }
 
 
