@@ -2015,7 +2015,6 @@ section:nth-last-child {
     will-change: transform;
 }
 
-/* ⭐ 核心修正：一定要固定寬度 + 不要 min-width */
 /* ===== 卡片 ===== */
 .review-card {
   flex: 0 0 calc((100% - 56px) / 3);
@@ -2033,6 +2032,8 @@ section:nth-last-child {
 
   box-shadow: rgb(0 129 204 / 95%) 0px 25px 29px -21px,
               rgb(0 129 204 / 90%) 0px 8px 12px -8px;
+
+  transform: translateZ(0);
 }
 
 /* ===== 共用層 ===== */
@@ -2043,8 +2044,12 @@ section:nth-last-child {
 
   padding: 35px 28px;
   box-sizing: border-box;
-  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: transform;
+
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+              opacity 0.8s ease;
+
+  will-change: transform, opacity;
+
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 
@@ -2055,26 +2060,25 @@ section:nth-last-child {
 .review-front {
   transform: translateY(0%);
   opacity: 1;
+  z-index: 2;
 }
 
-/* ===== 後面 ===== */
+/* ===== 後面（🔥關鍵修正） ===== */
 .review-back {
-  position: absolute;
-  inset: 0;
-
   display: flex;
   flex-direction: column;
 
-  justify-content: center;  
-  align-items: center;      
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
   padding: 20px;
-
   transform: translateY(100%);
   opacity: 0;
 
-  transition: 0.5s ease;
+  z-index: 1;
+
+  pointer-events: none;
 }
 
 /* ===== hover 動畫 ===== */
@@ -2086,6 +2090,8 @@ section:nth-last-child {
 .review-card:hover .review-back {
   transform: translateY(0%);
   opacity: 1;
+
+  pointer-events: auto;
 }
 
 /* ===== 內容樣式 ===== */
