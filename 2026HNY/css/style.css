@@ -674,9 +674,7 @@ section:nth-last-child {
   }
 }
 
-/* =========================
-   ⭐ 核心：614以下固定 2 欄置中
-========================= */
+/* 614以下固定 2 欄置中 */
 
 @media (max-width: 614px) {
 
@@ -699,9 +697,13 @@ section:nth-last-child {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .button-honey {
     width: calc(48% - 6px);
+  }
+
+  .logo-w {
+    float: left;
   }
 }
 
