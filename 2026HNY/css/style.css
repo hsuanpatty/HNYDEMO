@@ -699,6 +699,12 @@ section:nth-last-child {
   }
 }
 
+@media (max-width: 575px) {
+  .button-honey {
+    width: calc(48% - 6px);
+  }
+}
+
 /* 專案第一區 */
 .bg-1 {
   position: relative;
@@ -1510,7 +1516,6 @@ section:nth-last-child {
   .pet-title {
 		margin: 50px 0 0;
   }
-
 }
 
 
@@ -1557,7 +1562,7 @@ section:nth-last-child {
 	}
 
   .honey-text {
-    width: 85px;
+    width: 100px;
   }
 
   .scroll-position {
@@ -2047,15 +2052,25 @@ section:nth-last-child {
 
 /* ===== 後面 ===== */
 .review-back {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;  
+  align-items: center;      
+  text-align: center;
+
+  padding: 20px;
+
   transform: translateY(100%);
   opacity: 0;
 
-  position: relative; /* ⭐讓按鈕可以定位 */
-  display: flex;
-  flex-direction: column;
+  transition: 0.5s ease;
 }
 
-/* ===== hover：上下滑動交換 ===== */
+/* ===== hover 動畫 ===== */
 .review-card:hover .review-front {
   transform: translateY(-100%);
   opacity: 0;
@@ -2101,10 +2116,10 @@ section:nth-last-child {
   font-weight: 400;
   line-height: 1.5;
 
-  height: calc(1.5em * 4);
+  height: calc(1.5em * 5);
 
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 
   overflow: hidden;
@@ -2114,20 +2129,20 @@ section:nth-last-child {
   color: var(--lightblue);
   font-size: 16px;
   font-weight: 400;
+  text-align: left;
   line-height: 1.8;
-  height: calc( 1.8em * 10);
+  height: calc( 1.8em * 5);
   display: -webkit-box;
-  -webkit-line-clamp: 10;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 
   overflow: hidden;
-  margin-bottom: 15px;
+  margin: auto;
 }
 
 
 /* ===== 右下角按鈕 ===== */
-.review-btn {
-  margin-top: auto;      
+.review-btn {      
   align-self: flex-end;  
 
   padding: 8px 14px;
@@ -2209,12 +2224,6 @@ section:nth-last-child {
    RWD（關鍵修正版）
 ======================= */
 @media (max-width: 1199px) {
-	.review-text {
-    min-height: 160px;
-    height: calc(1.5em * 7);
-    -webkit-line-clamp: 7;
-	}
-
 	.slider-track {
     gap: 15px;
 	}
@@ -2366,7 +2375,11 @@ section:nth-last-child {
   }
 
 	.bottom-btn {
-    	padding: 46px 70px 50px;
+    padding: 46px 70px 50px;
+	}
+
+  .review-card {
+    height: 420px;
 	}
 }
 
