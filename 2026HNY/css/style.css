@@ -573,8 +573,8 @@ section:nth-last-child {
 	}
 
 	.swiper-slide-caption-2 {
-    	top: 72%;
-    	right: -25%;
+    top: 72%;
+    right: -25%;
 	}
 
   .swiper-slide-caption-3 {
@@ -660,48 +660,43 @@ section:nth-last-child {
   }
 }
 
-@media (max-width: 991.98px) { 
-	.honey-text {
-    	width: 140px;
-	}
-
-	.button-honey-top {
-    	top: 45px;
-	}
-
-	.button-honey {
-    	max-width: 170px;
-	}
-
+@media (max-width: 991.98px) {
+  .honey-text { width: 140px; }
+  .button-honey { max-width: 170px; }
 }
 
 @media (max-width: 768.98px) {
-    .honey-text {
-        width: 120px;
-    }
+  .honey-text { width: 120px; }
 
-	.button-honey {
-  	width: 150px;
-		height: 50px;
-	}
+  .button-honey {
+    width: 150px;
+    height: 50px;
+  }
 }
 
-@media (max-width: 575.98px) { 
-	.honey-text {
-        width: 100px;
-    }
+/* =========================
+   ⭐ 核心：614以下固定 2 欄置中
+========================= */
 
-	.scroll-position {
-		margin-top: -175px;
-	}
-}
+@media (max-width: 614px) {
 
+  .button-honey-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
 
+  .button-honey {
+    width: calc(45% - 6px);
+    max-width: none;
+    height: 50px;
+  }
 
-@media (max-width: 379.98px) { 
-	.button-honey {
-  		width: 135px;
-	}
+  .honey-text {
+    width: 100px;
+  }
 }
 
 /* 專案第一區 */
@@ -870,9 +865,9 @@ section:nth-last-child {
 	  }
 
 	.adorn-3 {
-    	top: 66%;
-    	right: 11%;
-    	width: 35%;
+    top: 66%;
+    right: 11%;
+    width: 35%;
 		display: block;
 	}
 }
@@ -884,7 +879,7 @@ section:nth-last-child {
 	}
 
 	.honeymoon-wrap {
-        padding-top: 45px;
+      padding-top: 45px;
     }
 
 	.honeymoon-wrap .right {
@@ -894,20 +889,20 @@ section:nth-last-child {
 	}
 
 	.honeymoon-wrap .right img {
-    	max-width: 85%;
+    max-width: 85%;
 	}
 
 	.adorn-2 .garnish-2 {
-    	width: 36%;
-    	top: 5%;
-    	right: -12%;
+    width: 36%;
+    top: 5%;
+    right: -12%;
 	}
 
 	.adorn-3 {
-        top: 61%;
-        right: -10%;
-        width: 66%;
-    }
+    top: 61%;
+    right: -10%;
+    width: 66%;
+  }
 }
 
 /* 專案第二區 */
@@ -1005,10 +1000,10 @@ section:nth-last-child {
 	content:"";
 	position:absolute;
 
-    right: -62%;
-    top: 1%;
-    transform: translateY(-50%);
-    width: 90%;
+  right: -62%;
+  top: 1%;
+  transform: translateY(-50%);
+  width: 90%;
 
 	height:120px;
 	
@@ -1019,12 +1014,12 @@ section:nth-last-child {
 
 /* 內文 */
 .info-text {
-  	margin: 10px 10px 30px;
-  	font-size: 22px;
-  	font-weight: 500;
+  margin: 10px 10px 30px;
+  font-size: 22px;
+  font-weight: 500;
 	font-family: "微軟正黑體";
-  	line-height: 1.8;
-  	color: var(--lightblue);
+  line-height: 1.8;
+  color: var(--lightblue);
  	letter-spacing: 0.1rem;
 }
 
@@ -1073,13 +1068,13 @@ section:nth-last-child {
 }
 
 .info-section .text {
-  	color: var(--lightblue);
-  	font-size:22px;
-  	letter-spacing: 0.1rem;
+  color: var(--lightblue);
+  font-size:22px;
+  letter-spacing: 0.1rem;
 	font-weight: 500;
 	font-family: "微軟正黑體";
-  	line-height:1.5;
-  	padding: 10px 0;
+  line-height:1.5;
+  padding: 10px 0;
 }
 
 .text strong {
@@ -1142,9 +1137,6 @@ section:nth-last-child {
 	}
 
 	.adorn-3 {
-    	/* top: 66%;
-    	right: 11%;
-    	width: 60%; */
 		display: none;
 	}
 
@@ -1153,30 +1145,30 @@ section:nth-last-child {
 	}
 
 	.adorn-2 {
-    	top: -25%;
-    	right: 17%;
-    	width: 30%;
+    top: -25%;
+    right: 17%;
+    width: 30%;
 	}
 
 	.honeymoon-wrap .right > .gift {
-    	width: 88%;
+    width: 88%;
 	}
 
 	.adorn-4 {
-        position: absolute;
-        top: 7%;
-        left: 108%;
-        transform: translate(-50%, -50%);
-        width: 60%;
-        z-index: 11;
-        pointer-events: none;
+    position: absolute;
+    top: 7%;
+    left: 108%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    z-index: 11;
+    pointer-events: none;
 
 		display: block;
-    }
+  }
 
 	.garnish-3 {
-        width: 30%;
-    }
+    width: 30%;
+  }
 
 	.bg-2 {
 		overflow: hidden;
@@ -1186,13 +1178,13 @@ section:nth-last-child {
 
 @media (max-width: 1199.98px) {
 	.feedback-sub::after {
-    	right: -20%;
-    	top: -16%;
-    	width: 40%;
+    right: -20%;
+    top: -16%;
+    width: 40%;
 	}
 
 	.honeymoon-wrap .right > .gift {
-    	width: 80%;
+    width: 80%;
 	}
 
 	.info-item .gwp-1,
@@ -1212,7 +1204,7 @@ section:nth-last-child {
 	}
 
 	.scroll-position {
-		margin-top: -210px;
+		margin-top: -220px;
 	}
 
 	.limited-top {
@@ -1223,31 +1215,31 @@ section:nth-last-child {
 	.info-item .gwp-1,
 	.info-item .gwp-2 ,
 	.info-item .gwp-3  {
-  		width: 40%;
+  	width: 40%;
 	}
 
 	.adorn .garnish-1 {
-        width: 43%;
-        top: -36%;
-        left: 62%;
+    width: 43%;
+    top: -36%;
+    left: 62%;
 	}
 
 	.adorn-2 {
-    	top: -5%;
-    	right: -48%;
-    	width: 80%;
+    top: -5%;
+    right: -48%;
+    width: 80%;
 	}
 	.feedback-sub::after {
-        right: -6%;
-        top: -6%;
-        width: 34%;
+    right: -6%;
+    top: -6%;
+    width: 34%;
 	}
 
 	.adorn-4 {
-        top: 5%;
-        left: 90%;        
+    top: 5%;
+    left: 90%;        
 		width: 60%;
-    }
+  }
 	
 	.garnish-3 {
 		width: 50%;
@@ -1273,11 +1265,6 @@ section:nth-last-child {
     gap: 15px;
 	}
 
-	.button-honey {
-    max-width: 160px;
-		height: 61px;
-  }
-
 	.honey-text {
     width: 120px;
   }
@@ -1290,11 +1277,6 @@ section:nth-last-child {
 
   .honey-text {
     width: 100px;
-  }
-
-  .button-honey {
-    max-width: 120px;
-    height: 53px;
   }
 
   .pet-title {
@@ -1328,7 +1310,7 @@ section:nth-last-child {
   }
 
   .info-item:nth-child(2) .info-text {
-    	margin: 0 10px 0;
+    margin: 0 10px 0;
 	}
 
 	.honeymoon-wrap .left .content {
@@ -1339,12 +1321,12 @@ section:nth-last-child {
   }
 
 	 .pet-title {
-		margin: 50px 0 0;
+		margin: 0;
   }
 
 	.feedback-sub {
     font-size: 18px;
-		margin: 0 0 0;
+		margin: 0;
 	}
 
 	.feedback-sub::after {
@@ -1363,7 +1345,7 @@ section:nth-last-child {
 	}
 
 	.text strong {
-    	font-size: 20px;
+    font-size: 20px;
 		font-weight: 500;
 	}
 
@@ -1390,11 +1372,11 @@ section:nth-last-child {
   }
 
 	.garnish-3 {
-        width: 70%;
-    }
+    width: 70%;
+  }
 
 	.honeymoon-wrap .right > .gift {
-        width: 60%;
+    width: 60%;
   }
 	
   .sec4 .title-img {
@@ -1407,14 +1389,26 @@ section:nth-last-child {
   }
 }
 
+@media (max-width: 614px) {
+  .scroll-tag {
+    gap: 18px 10px;
+    width: 70%;
+    justify-content: center;
+  }
+
+  .pet-title {
+    padding-top: 75px;
+  }
+
+  .honeymoon-wrap {
+    padding-top: 35px;
+  }
+}
+
 @media (max-width: 575.98px) {
 	.button-honey-top {
 		position: relative;
-        top: -70px;
-  }
-
-  .button-honey {
-    max-width: 150px;
+    top: -100px;
   }
 
   .info-item .gwp-1,
@@ -1424,7 +1418,8 @@ section:nth-last-child {
 	}
 
 	.pet-title {
-    width: 100%;
+    width: 90%;
+    padding-top: 10px;
   }
 
 	.adorn .garnish-1 {
@@ -1434,42 +1429,42 @@ section:nth-last-child {
 	}
 
 	.adorn-2 {
-    	top: -15%;
+    top: -15%;
 	}
 
 	.feedback-sub::before {
-    	margin-right: 10px;
+    margin-right: 10px;
 	}
 
 	.feedback-sub::after {
-    	right: 2%;
-    	top: -61%;
-    	width: 37%;
+    right: 2%;
+    top: -61%;
+    width: 37%;
 	}
 
 	.honeymoon-wrap .left .content {
-    	width: 100%;
-    	top: -46%;
-    	left: 50%;
+    width: 100%;
+    top: -46%;
+    left: 50%;
 		margin-top: 10px;
 	}
 
 	.honeymoon-wrap .right > .gift {
-        width: 82%;
-        padding-right: 25px;
+    width: 82%;
+    padding-right: 25px;
 	}
 
 	.title-img {
-    	width: 65%;
+    width: 65%;
 		margin: auto;
 	}
 
 	.info-icon {
-        margin: auto;
-    }
+    margin: auto;
+  }
 
 	.info-section {
-  		display: block;
+  	display: block;
 		margin: 10px 0 ;
 	}
 
@@ -1499,9 +1494,17 @@ section:nth-last-child {
     margin-top: -130px;
   }
 
+  .scroll-tag {
+    width: 80%;
+  }
+
   .sec4 .title-img {
     width: 100%;
     margin: 0 auto 10px;
+  }
+
+  .pet-title {
+		margin: 50px 0 0;
   }
 
 }
@@ -1516,38 +1519,32 @@ section:nth-last-child {
 	}
 
 	.feedback-sub {
-    	font-size: 16px;
-    	line-height: 1.6;
-
-    	padding: 20px 0 30px;
-    	height: 55px;
-
-    	letter-spacing: 0;
-
-    	background: url(../images/adorn-6.png) no-repeat center;
-    	background-size: 110% 100%;
-
-    	display: flex;
-    	flex-wrap: wrap;
-
-    	justify-content: flex-start; 
-    	text-align: left;             
-    	align-items: center;
-
-    	padding-left: 10px;          
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px 0 30px;
+    height: 55px;
+    letter-spacing: 0;
+    background: url(../images/adorn-6.png) no-repeat center;
+    background-size: 110% 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    text-align: left;             
+    align-items: center;
+    padding-left: 10px;          
 	}
 
 	.feedback-sub span {
-    	width: 100%;
-    	display: block;
-    	margin-top: 0;
+    width: 100%;
+    display: block;
+    margin-top: 0;
 		text-indent: 40px;
 		font-size: 18px;
 	}
 
 	.feedback-sub::after {
 		right: 2%;
-    	width: 40%;
+    width: 40%;
 		top: 48%;
 	}
 
@@ -1555,47 +1552,49 @@ section:nth-last-child {
     gap: 7px;
 	}
 
-  .button-honey {
-    max-width: 106px;
-  }
-
   .honey-text {
-    width: 90px;
+    width: 85px;
   }
 
   .scroll-position {
     margin-top: -130px;
   }
 
+  .pet-title {
+    margin: 25px 0 0;
+  }
 }
 
 @media (max-width: 451.98px) {
 	.feedback-sub::after {
-    	width: 37%;
+    width: 37%;
 	}
 
-  .button-honey {
-    max-width: 150px;
-  }
-
   .scroll-position {
-    margin-top: -180px;
+    margin-top: -150px;
   }
 
   .scroll-tag {
     gap: 15px;
   }
+
 }
+@media (max-width: 375.98px) {
+  .scroll-position {
+    margin-top: -160px;
+  }
+}
+
 
 
 @media (max-width: 320.98px) {
 	.feedback-sub::after {
-    	display: none;
+    display: none;
 	}
 
 	.notice {
-        width: 100%;
-    }
+    width: 100%;
+  }
 
 	.info-item:nth-child(3) {
     padding-bottom: 120px;
