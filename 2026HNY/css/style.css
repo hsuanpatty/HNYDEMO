@@ -1552,20 +1552,39 @@ section:nth-last-child {
 	}
 
   .scroll-tag {
-    	gap: 15px;
+    gap: 7px;
 	}
 
-  
+  .button-honey {
+    max-width: 106px;
+  }
+
+  .honey-text {
+    width: 90px;
+  }
+
   .scroll-position {
-        margin-top: -180px;
+    margin-top: -130px;
   }
 
 }
 
-@media (max-width: 375.98px) {
+@media (max-width: 451.98px) {
 	.feedback-sub::after {
     	width: 37%;
 	}
+
+  .button-honey {
+    max-width: 150px;
+  }
+
+  .scroll-position {
+    margin-top: -180px;
+  }
+
+  .scroll-tag {
+    gap: 15px;
+  }
 }
 
 
